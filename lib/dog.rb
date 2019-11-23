@@ -14,7 +14,7 @@ class Dog
   
   def self.clear_all
     @@all.each do |x|
-      @@all[x].pop
+      @@all[x].delete
     end
   end
   
