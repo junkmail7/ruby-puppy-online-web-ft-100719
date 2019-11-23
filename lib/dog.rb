@@ -13,11 +13,12 @@ class Dog
   end
   
   def self.clear_all
-    @@all.each do |x|
-      @@all[x].delete
-    end
+    @@all.clear
   end
   
   def self.print_all
+    @@all.each do |x|
+      puts("#{@@all[x]}")
+    end
   end
 end
