@@ -13,6 +13,9 @@ class Dog
   end
   
   def self.clear_all
+    @@all.each do |x|
+      @@all[x].pop
+    end
   end
   
   def self.print_all
